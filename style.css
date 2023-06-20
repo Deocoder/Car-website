@@ -1,0 +1,1083 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: regular;
+}
+
+:root {
+  --primary-color: #05a3dd;
+  --background: #141a1c;
+  --header: firebrick;
+  --text: #fff;
+}
+
+@font-face {
+  font-family: regular;
+  src: url(Inconsolata-Regular.ttf);
+}
+
+@font-face {
+  font-family: sec;
+  src: url(Epilogue-Regular.ttf);
+}
+
+body {
+  background-color: var(--background);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*  */
+
+.header-con {
+  background: url(img/car3.jpg);
+  width: 100%;
+  height: 700px;
+  animation: slider 10s infinite ease-in-out forwards;
+  background-repeat: no-repeat;
+}
+
+@keyframes slider {
+  25% {
+    background: url(img/h1-rev-img-2b.jpg);
+  }
+  50% {
+    background: url(img/h1-rev-img-3b.jpg);
+  }
+  75% {
+    background: url(img/h1-rev-img-1b.jpg);
+  }
+  100% {
+    background: url(img/h1-rev-img-4b.jpg);
+  }
+}
+
+header {
+  padding: 20px 80px;
+  display: flex;
+  color: var(--text);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid firebrick;
+  position: relative;
+}
+
+.header-logo img {
+  width: 100px;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.header-text a {
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-con h1 {
+  font-size: 42px;
+  font-family: sec;
+  text-transform: capitalize;
+  color: var(--text);
+  font-weight: normal;
+}
+
+.header-con p {
+  color: var(--text);
+  margin-top: 20px;
+}
+
+.rent-text {
+  position: absolute;
+  top: 55%;
+  padding: 20px;
+}
+
+.rent-form {
+  padding: 20px;
+  margin-top: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rent-form input {
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--header);
+  background-color: transparent;
+  color: #ddd;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.rent-form input:focus {
+  color: var(--text);
+}
+
+.btn {
+  padding: 20px 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1.5px solid var(--header);
+}
+
+.btn:hover {
+  background-color: var(--header);
+  transition: 3s;
+  transform-origin: left;
+  background-position: left;
+}
+
+nav {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: 60px;
+  color: #000;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  font-family: sec;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.nav-links li {
+  padding: 1rem;
+  flex: 1;
+}
+
+.nav-links a {
+  color: var(--text);
+}
+
+.logo {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.bars i {
+  color: var(--text);
+  cursor: pointer;
+  color: var(--header);
+  font-size: 22px;
+}
+
+.bars {
+  margin-left: -10px;
+  display: none;
+}
+
+/* Mobile navigation */
+/* The Overlay (background) */
+#myNav {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0%;
+  width: 100%;
+  z-index: 1000;
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+#myNav a {
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--header);
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+#myNav a:hover,
+#myNav a:focus {
+  margin-left: 30px;
+}
+
+/* Position the close button (top right corner) */
+#myNav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+/*  */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+/* Caption text */
+.text {
+  color: var(--text);
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 48%;
+  width: 100%;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 85px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--background);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot-con {
+  transform: translateY(-60px);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #bbb;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--background);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 52px;
+  font-family: regular;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  padding: 10px 20px;
+  color: var(--text);
+}
+
+.col-2 h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 52px;
+  font-family: sec;
+}
+
+.col-2 p {
+  padding: 10px;
+  font-size: 12px;
+}
+/*  */
+.cars {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.car-img {
+  position: relative;
+  display: flex;
+  width: 32.5%;
+  height: 420px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.car-img img {
+  width: 100%;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.car-img:hover .overlay {
+  height: 100%;
+}
+
+h6 {
+  color: var(--header);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.care-img {
+  width: 300px;
+  height: 400px;
+}
+
+.care-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ride {
+  padding: 55px 80px;
+  margin-bottom: 50px;
+  background-color: #0c1315;
+}
+
+.ride-box {
+  padding: 20px;
+}
+
+.ride-box h3 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.ride-box p {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.rent-carstwo {
+  padding: 150px 40px;
+  background: url(img/cars\ 2.jpg);
+  object-fit: cover;
+  /* background-position: center center; */
+}
+
+.rent-carstwo h1 {
+  font-size: 42px;
+  font-family: sec;
+  text-transform: capitalize;
+  color: var(--text);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.rent-cars {
+  margin-top: 50px;
+  padding: 150px 40px;
+  background: url(img/h1-img-5.jpg);
+}
+
+.rent-cars h1 {
+  font-size: 42px;
+  font-family: sec;
+  text-transform: capitalize;
+  color: var(--text);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.driver-box {
+  margin-top: 60px;
+  width: 300px;
+  height: 500px;
+}
+
+.driver {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.driver img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.driver-box h3 {
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--text);
+  padding: 10px;
+  font-weight: normal;
+}
+
+.driver-box a {
+  color: var(--header);
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.counter-con {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.row p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #a6a6a6;
+}
+
+.review-box {
+  margin-top: 30px;
+  padding: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.review-box p {
+  text-align: justify;
+  color: var(--text);
+}
+
+.review-box h3 {
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+.one {
+  background: url(img/h1-team-img-1.jpg);
+  object-fit: cover;
+  border-radius: 10px;
+  background-position: center center;
+}
+.two {
+  background: url(img/h1-team-img-2.jpg);
+  object-fit: cover;
+  border-radius: 10px;
+  background-position: center center;
+}
+.three {
+  background: url(img/h1-team-img-3-768x1080.jpg);
+  background-position: center center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.default {
+  margin: 50px 0;
+  padding: 250px 40px;
+  background: url(img/h1-img-8.jpg);
+}
+
+.variety-box {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text);
+  border-bottom: 1px solid #4b4a4a;
+}
+
+.variety-box h1 {
+  font-size: 50px;
+  color: var(--header);
+}
+
+.variety-box ul li {
+  list-style: disc;
+  line-height: 22px;
+}
+
+.variety {
+  padding: 20px 50px;
+}
+
+.info {
+  padding: 60px 40px;
+  color: var(--text);
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-box img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.info-box h3 {
+  font-weight: normal;
+  line-height: 28px;
+}
+
+#myVideo {
+  height: 400px;
+  width: fit-content;
+  border-radius: 20px;
+  position: relative;
+  border: 2px var(--header) double;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+/* Modal */
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.modal-container ::placeholder {
+  color: var(--text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal {
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 20px;
+  background-color: var(--header);
+  margin: 5px auto; /* 15% from the top and centered */
+  width: 40%; /* Could be more or less, depending on screen size */
+  padding: 20px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-content input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px double var(--background);
+  background-color: transparent;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.modal-container input:last-child {
+  margin-bottom: 0;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Footer */
+.footer {
+  background: var(--background);
+  color: var(--text);
+  font-size: 14px;
+  padding: 60px 40px;
+}
+
+.footer ul li {
+  padding: 5px;
+}
+
+.footer p {
+  color: #d3d0d0;
+  line-height: 24px;
+  padding: 10px;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 25%;
+}
+
+.footer-col-2 {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 10%;
+  text-align: center;
+}
+
+.footer hr {
+  border: none;
+  background-color: var(--header);
+  margin: 20px 0;
+  height: 1px;
+}
+
+.footer a {
+  color: var(--text);
+  transition: all 0.5s;
+}
+
+.footer a:hover {
+  margin-left: 15px;
+}
+
+/* ABOUT PAGE */
+.story-con {
+  padding: 20px;
+}
+
+.story-con img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.story-text {
+  padding: 20px;
+}
+
+.story-text h1 {
+  font-size: 2.7rem;
+  font-weight: normal;
+}
+
+.story-text p {
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.team-con {
+  height: fit-content;
+  background: var(--background);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-img-con {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  gap: 1rem;
+}
+
+.title-4con {
+  margin-top: 70px;
+}
+
+.title-4con h1 {
+  color: var(--text);
+}
+
+.team-container {
+  position: relative;
+  width: 300px;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  filter: grayscale(100%);
+  height: auto;
+  transition: all 500ms;
+}
+
+.imgoverlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.imgoverlay small {
+  color: rgb(207, 207, 207);
+  letter-spacing: 1.5px;
+}
+
+.team-container:hover .imgoverlay {
+  opacity: 1;
+}
+
+.image:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    font-size: 13px;
+  }
+
+  .overlay-content a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  .header-logo {
+    width: 50px;
+  }
+
+  .header-text {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .header-text a {
+    font-size: 12px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .rent-text {
+    top: 200px;
+  }
+
+  .rent-form {
+    flex-direction: column;
+    margin-top: 210px;
+  }
+
+  .header-con {
+    height: 700px;
+  }
+
+  .header-con h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .rent-form input {
+    padding: 10px;
+    color: #fff;
+    gap: 10px;
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: var(--text);
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .col-2 h1 {
+    font-size: 27px;
+  }
+
+  .cars {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .car-img {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: normal;
+  }
+
+  .ride {
+    padding: 55px 20px;
+  }
+
+  .care-img {
+    width: 100%;
+  }
+
+  .rent-cars h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .rent-cars {
+    background-position: center center;
+  }
+
+  hr {
+    margin-top: 10px;
+    border: 1px solid var(--header);
+  }
+
+  .review-box {
+    width: 100%;
+  }
+
+  .default {
+    background-position: center center;
+  }
+
+  .variety-box {
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .info-box {
+    padding: 10px;
+    align-items: center;
+  }
+
+  .info-box h3 {
+    font-size: 15px;
+  }
+
+  .info-box img {
+    width: 30px;
+  }
+
+  .footer-col-3,
+  .footer-col-4 {
+    text-align: left;
+  }
+}

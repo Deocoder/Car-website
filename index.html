@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniegbo Motors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section class="header-con">
+      <header>
+        <div class="header-logo">
+          <img src="img/logo-light-img-1.png" alt="" />
+        </div>
+        <div class="header-text">
+          <div>
+            <a href="">+ 2438 376483</a>
+          </div>
+          <div>
+            <a href="">jdhjjhjfjjjff</a>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="bars">
+          <li>
+            <i class="fa fa-align-left fa-2x" onclick="openNav()"></i>
+          </li>
+        </div>
+        <div class="nav-links">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href=""><li>Services</li></a>
+          <a href=""><li>Collection</li></a>
+          <a href=""><li>Artist</li></a>
+        </div>
+      </nav>
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="#join">About</a>
+          <a href="">Artwork</a>
+          <a href="#collection">Collection</a>
+          <a href="#Artist">Artist</a>
+        </div>
+      </div>
+
+      <div class="rent-text">
+        <h1>Need to rent a luxury car? send a request</h1>
+        <p>Complete the form below and we will get back to you.</p>
+      </div>
+
+      <div class="rent-form">
+        <input type="text" placeholder="location" />
+        <input type="datetime-local" />
+        <input type="" placeholder="Phone No" />
+        <input type="text" placeholder="Drop off location" />
+        <button type="submit" class="btn">
+          <i class="fa fa-send-o"></i> Send
+        </button>
+      </div>
+    </section>
+    <br />
+    <br />
+    <section class="provide">
+      <div class="row">
+        <div class="col-2">
+          <h1>
+            What We Provide Is The Luxury Transport And Most Comfortable
+            Experience
+          </h1>
+        </div>
+        <div class="col-2 center">
+          <video
+            src="img/ Toyota Camry.mp4"
+            muted
+            autoplay
+            loop
+            id="myVideo"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">
+      Login
+    </button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="">
+        <div class="modal-container">
+          <h1>BOOK NOW</h1>
+          <h3>Chase your dreams with us</h3>
+          <input type="text" placeholder="location" />
+
+          <input type="datetime-local" />
+
+          <input type="" placeholder="Phone No" />
+          
+          <input type="text" placeholder="Drop off location" />
+          <!-- <input type="text" placeholder="Services / wedding / airport  e.t.c" /> -->
+
+          <button type="submit" class="btn"><i class="fa fa-send"></i> Sumbit</button>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class=""
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <section class="cars">
+      <div class="car-img">
+        <img
+          src="img/Main-home-vehicle-list-img-01.jpg"
+          style="object-fit: cover"
+          alt=""
+        />
+        <div class="overlay">
+          <div class="text">
+            4x4 <br />
+            <h1>$200/hour</h1>
+            <br />
+            <h4>Aston Martin DB11 AMR</h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-img">
+        <img
+          src="img/Main-home-vehicle-list-img-02.jpg"
+          style="object-fit: cover"
+          alt=""
+        />
+        <div class="overlay">
+          <div class="text">
+            Sport <br />
+            <h1>$200/hour</h1>
+            <br />
+            <h4>Ford F-150 Raptor</h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-img">
+        <img
+          src="img/Main-home-vehicle-list-img-04.jpg"
+          style="object-fit: cover"
+          alt=""
+        />
+        <div class="overlay">
+          <div class="text">
+            Limusine <br />
+            <h1>$200/hour</h1>
+            <br />
+            <h4>Bmw M 3 Coupe</h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-img">
+        <img
+          src="img/Main-home-vehicle-list-img-03.jpg"
+          style="object-fit: cover"
+          alt=""
+        />
+        <div class="overlay">
+          <div class="text">
+            Limusine <br />
+            <h1>$200/hour</h1>
+            <br />
+            <h4>Bmw X2 M35i DriveX</h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-img">
+        <img
+          src="img/Main-home-vehicle-list-img-05.jpg"
+          style="object-fit: cover"
+          alt=""
+        />
+        <div class="overlay">
+          <div class="text">
+            4x4 <br />
+            <h1>$200/hour</h1>
+            <br />
+            <h4>Mercedes G Class</h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-img">
+        <img
+          src="img/Main-home-vehicle-list-img-06.jpg"
+          style="object-fit: cover"
+          alt=""
+        />
+        <div class="overlay">
+          <div class="text">
+            Limusine <br />
+            <h1>$200/hour</h1>
+            <br />
+            <h4>Ford Raptor 135 X</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ride">
+      <h1 class="heading">Ride To Destinations With Maximum Comfort</h1>
+      <br />
+      <h6>FINEST TRANSPORT</h6>
+      <hr />
+      <br />
+      <div class="row">
+        <div class="col-2">
+          <div class="ride-box">
+            <h3>No delays</h3>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus veritatis veniam quod.
+            </p>
+          </div>
+          <div class="ride-box">
+            <h3>premium support</h3>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus veritatis veniam quod.
+            </p>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="ride-box">
+            <h3>high quality</h3>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus veritatis veniam quod.
+            </p>
+          </div>
+          <div class="ride-box">
+            <h3>a diverse selection</h3>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus veritatis veniam quod.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="care">
+      <div class="row">
+        <div class="col-2">
+          <h1>We Care Of Your Safety And Convenience</h1>
+          <h6>PREMIUM DRIVERS</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <br />
+          <button class="btn">book now</button>
+        </div>
+        <div class="col-2 flex">
+          <div class="care-img">
+            <img src="img/h1-img-3.jpg" alt="" width="" />
+          </div>
+          <div class="care-img">
+            <img src="img/roberto-nickson-IOI3KCYsn0o-unsplash.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rent-cars">
+      <h1>Do You Need To Rent A Car? See Our Offers</h1>
+      <button class="btn">VIEW OUR Offers</button>
+    </section>
+
+    <section class="ride">
+      <h1 class="heading">Our Proffesional Chauffeurs</h1>
+      <br />
+      <h6>meet our team</h6>
+      <hr />
+      <div class="row">
+        <div class="driver-box">
+          <div class="driver">
+            <img src="img/h1-team-img-1.jpg" alt="" />
+          </div>
+          <h3>Marco Watkivi</h3>
+          <a href="">+1234 5678 901</a>
+        </div>
+        <div class="driver-box">
+          <div class="driver">
+            <img src="img/h1-team-img-2.jpg" alt="" />
+          </div>
+          <h3>Marily Sulli</h3>
+          <a href="">+1234 5678 901</a>
+        </div>
+        <div class="driver-box">
+          <div class="driver">
+            <img src="img/h1-team-img-3.jpg" alt="" />
+          </div>
+          <h3>Zakary Tapun</h3>
+          <a href="">+1234 5678 901</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="exper" id="exper">
+      <div class="row">
+        <div class="col-2 flex">
+          <div class="care-img">
+            <img src="img/h1-img-6.jpg" alt="" />
+          </div>
+          <div class="care-img">
+            <img src="img/h1-img-7.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-2">
+          <h1>Premium Cars Rental</h1>
+          <h6>ONLY THE BEST</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            veritatis amet? Cumque!
+          </p>
+          <div class="row">
+            <div class="counter-con">
+              <div class="counter" data-target="27"></div>
+              <span>Years of experience</span>
+            </div>
+            <div class="counter-con">
+              <div class="counter" data-target="157"></div>
+              <span>Satisfied clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ride">
+      <h1 class="heading">
+        We trive to meet the needs of our clients and we value their opinions
+        about our work
+      </h1>
+      <hr />
+      <div class="row">
+        <div class="review-box one">
+          <h3>Excellent Service! Car Rent Service!</h3>
+          <p>
+            I have been using Rentaly for my Car Rental needs for over 5 years
+            now. I have never had any problems with their service. Their
+            customer support is always responsive and helpful. I would recommend
+            Rentaly to anyone looking for a reliable Car Rental provider.
+          </p>
+          <p>--Stepanie Hutchkiss</p>
+        </div>
+        <div class="review-box two">
+          <h3>Excellent Service! Car Rent Service!</h3>
+          <p>
+            We have been using Rentaly for our trips needs for several years now
+            and have always been happy with their service. Their customer
+            support is Excellent Service! and they are always available to help
+            with any issues we have. Their prices are also very competitive.
+          </p>
+          <p>--Jovan Reels</p>
+        </div>
+        <div class="review-box three">
+          <h3>Excellent Service! Car Rent Service!</h3>
+          <p>
+            Endorsed by industry experts, Rentaly is the Car Rental solution you
+            can trust. With years of experience in the field, we provide fast,
+            reliable and secure Car Rental services.
+          </p>
+          <p>Kanesha Keyton</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="default"></section>
+
+    <section class="ride">
+      <h1 class="heading">A High Variety Of Options</h1>
+      <br />
+      <h6>BEST POSSIBILITIES</h6>
+      <br />
+      <hr />
+      <div class="variety">
+        <div class="variety-box">
+          <div><img src="img/h1-img-9.png" alt="" /></div>
+          <div>
+            <h3>Premium</h3>
+            <br />
+            <h1>$40/h</h1>
+          </div>
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+          <div><button class="btn">book now</button></div>
+        </div>
+        <div class="variety-box">
+          <div><img src="img/h1-img-10.png" alt="" /></div>
+          <div>
+            <h3>Super</h3>
+            <br />
+            <h1>$50/h</h1>
+          </div>
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+          <div><button class="btn">book now</button></div>
+        </div>
+        <div class="variety-box">
+          <div><img src="img/h1-img-11.png" alt="" /></div>
+          <div>
+            <h3>Luxury</h3>
+            <br />
+            <h1>$60/h</h1>
+          </div>
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+          <div><button class="btn">book now</button></div>
+        </div>
+        <div class="variety-box">
+          <div><img src="img/h1-img-12.png" alt="" /></div>
+          <div>
+            <h3>Business</h3>
+            <br />
+            <h1>$80/h</h1>
+          </div>
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+          <div><button class="btn">book now</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rent-carstwo">
+      <h1>Get 15% Off Your Rental! Choose Your Model</h1>
+    </section>
+
+    <section class="info">
+      <div class="row">
+        <div class="info-box">
+          <img src="img/content-bottom-icon-001.png" alt="" />
+          <h3>
+            11 Rue de la Mutualité, <br />
+            92400 Paris
+          </h3>
+        </div>
+        <div class="info-box">
+          <img src="img/h2-icon.png" alt="" />
+          <h3>
+            Phone: (012) 345 6789 0123;<br />
+            Email: luxe@example.com
+          </h3>
+        </div>
+        <div class="info-box">
+          <img src="img/content-bottom-icon-003.png" alt="" />
+          <h3>
+            Mon-Sat 09:00-23:00; <br />
+            Sunday is closed.
+          </h3>
+          <br />
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <div class="footer">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            numquam optio aut iste, cum consectetur mollitia fugiat corrupti
+          </p>
+        </div>
+        <div class="footer-col-2">
+          <div class="">
+            <img src="img/logo-light-img-1.png" alt="" />
+            <p>
+              Our purpose is to give you the of cars we can and also at
+              Affordable prices.
+            </p>
+          </div>
+        </div>
+        <div class="footer-col-3">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Our Team </a></li>
+            <li><a href="#"> Our Services</a></li>
+            <li><a href="#"> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="" target="_blank"> Facebook</a>
+            </li>
+            <li>
+              <a href="" target="_blank">Twitter </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> Instagram </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright All Right Rerserved | Rentaly 2023</p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!--
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/car8.jpg" style="width: 100%" />
+        <div class="text">
+          <h1>
+            <strong>Beautiful</strong>
+            Cars That <br />
+            Insipire You
+          </h1>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/car9.jpg" style="width: 100%" />
+        <div class="text">
+          <h1><strong>Luxury</strong> Affordable Cars</h1>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/car.jpg" style="width: 100%" />
+        <div class="text">
+          <h1>Find Your <strong>Dream Car</strong></h1>
+        </div>
+      </div>
+
+      <br />
+      <div style="text-align: center" class="dot-con">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <br />
+    <br />
+    <h1 class="heading">About Us</h1>
+    <br />
+    <br />
+    <section class="about">
+      <div class="row">
+        <div class="col-2">
+          <h1>
+            The <br />
+            Chateaux
+          </h1>
+          <p>
+            The best car renting service provider in
+            <strong> Enugu Nigeria </strong>
+          </p>
+        </div>
+        <div class="col-2">
+          <img src="img/206-2064199_car-png-car-for-photoshop-png.png" alt="" />
+        </div>
+      </div>
+    </section> -->
+  </body>
+</html>
