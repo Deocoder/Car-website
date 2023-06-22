@@ -329,6 +329,16 @@ nav {
   animation-duration: 1.5s;
 }
 
+.closebtn{
+  border: none;
+  background-color: var(--header);
+  cursor: pointer;
+  color: var(--text);
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -1004,6 +1014,7 @@ h6 {
 .book-form {
   width: 100%;
   display: flex;
+  margin-bottom: 10px;
   justify-content: space-between;
 }
 
