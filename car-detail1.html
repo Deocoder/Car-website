@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniegbo Motors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cardetail-style.css">
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="bars">
+        <li>
+          <i class="fa fa-align-left fa-2x" onclick="openNav()"></i>
+        </li>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="services.html"><li>Services</li></a>
+      </div>
+    </nav>
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+      </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="">
+        <div class="modal-container">
+          <h1>BOOK NOW</h1>
+          <h3>Chase your dreams with us</h3>
+          <input type="text" placeholder="location" />
+
+          <div class="book-form">
+              <div class="custom-select" style="width: 48%;">
+                  <select>
+                    <option value="0">Select Service:</option>
+                    <option value="1">Rentage</option>
+                    <option value="2">Weeding Transport</option>
+                    <option value="3">Coporate Transport</option>
+                    <option value="4">Airport pick up</option>
+                  </select>
+                  </div>
+
+          <input type="datetime-local" />
+
+          </div>
+
+          <input type="" placeholder="Phone No" />
+          
+          <input type="text" placeholder="Drop off location" />
+          <!-- <input type="text" placeholder="Services / wedding / airport  e.t.c" /> -->
+
+          <button type="submit" class="btn"><i class="fa fa-send"></i> Sumbit</button>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="closebtn"
+          >
+           <i class="fa fa-remove"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <h1 class="heading" style="text-align: center;">Car details</h1>
+
+    <div class="row pad">
+      <div class="col-2">
+        <div class="tab-container">
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 2</div>
+            <img
+              src="img/car-detail/car-detail-1 (1).jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="img/car-detail/car-detail-1 (2).jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img
+              src="img/car-detail/car-detail-1 (4).jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img
+              src="img/car-detail/car-detail-1 (5).jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Thumbnail images -->
+          <div class="column-con">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/car-detail/car-detail-1 (2).jpg"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+                alt=" "
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/car-detail/car-detail-1 (4).jpg"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+                alt="  "
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/car-detail/car-detail-1 (5).jpg"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+                alt=" "
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <h2>Rolls Royce Overview</h2>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo laborum consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          est pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id. Sagittis molestie magnis
+          etiam nullam tincidunt hendrerit enim ultricies phasellus, laoreet
+          nascetur ornare torquent ultrices sapien sodales volutpat duis,
+          accumsan ridiculus magna dictum cras gravida leo mus ex. Aenean dictum
+          commodo iaculis fusce arcu, potenti aliquet venenatis leo nulla cras,
+          velit pharetra quam. Nostra augue ac tempus odio laoreet taciti
+          parturient gravida rutrum sociis habitant mollis tempor, quis aque
+          nibh nam himenaeos massa turpis nisi mus cursus semper vehicula
+          ridiculus.
+        </p>
+        <br>
+        <ul>
+          <li>Luxury Limousine Selectiont</li>
+          <li>High Safety and Nurity</li>
+          <li>Fixed Price & Bonus System</li>
+          <li>Fixed Price & Bonus System</li>
+          <li>Clean, Polite & Knowledgeable</li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <div class="car-detail-box">
+          <img src="img/h1-img-9.png" alt="" />
+          <h1>Ford F-150 Raptor</h1>
+          <br />
+          <div class="star-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="features">
+            <h3>4 Persons</h3>
+            <h3>Automatic</h3>
+            <h3>Black Leather Interior</h3>
+            <h3>Fast</h3>
+            <h3>Lux</h3>
+            <h3>Wifi</h3>
+          </div>
+          <div>
+            <h1>Extras</h1>
+            <p>
+              Leather Seats, LED Lighting, Audio system, rain sensors, air
+              conditioning, panoramic roof...
+            </p>
+          </div>
+          <div>
+            <br />
+            <h1>Prices</h1>
+            <h2>$180/hour</h2>
+            <h2>$3000/day</h2>
+          </div>
+          <br />
+          <button class="btn" onclick="document.getElementById('id01').style.display='block'">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="footer">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            numquam optio aut iste, cum consectetur mollitia fugiat corrupti
+          </p>
+        </div>
+        <div class="footer-col-2">
+          <div class="">
+            <img src="img/logo-light-img-1.png" alt="" />
+            <p>
+              Our purpose is to give you the of cars we can and also at
+              Affordable prices.
+            </p>
+          </div>
+        </div>
+        <div class="footer-col-3">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Our Team </a></li>
+            <li><a href="#"> Our Services</a></li>
+            <li><a href="#"> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="" target="_blank"> Facebook</a>
+            </li>
+            <li>
+              <a href="" target="_blank">Twitter </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> Instagram </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright All Right Rerserved | Rentaly 2023</p>
+    </div>
+  </body>
+</html>

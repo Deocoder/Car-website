@@ -1,0 +1,146 @@
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    font-size: 13px;
+  }
+
+  .overlay-content a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  .header-logo {
+    width: 50px;
+  }
+
+  .header-text {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .header-text a {
+    font-size: 12px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .rent-text {
+    top: 200px;
+  }
+
+  .rent-form {
+    flex-direction: column;
+    margin-top: 210px;
+  }
+
+  .header-con {
+    height: 700px;
+  }
+
+  .header-con h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .rent-form input {
+    padding: 10px;
+    color: #fff;
+    gap: 10px;
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: var(--text);
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .col-2 h1 {
+    font-size: 27px;
+  }
+
+  .cars {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .car-img {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: normal;
+  }
+
+  .ride {
+    padding: 55px 20px;
+  }
+
+  .care-img {
+    width: 100%;
+  }
+
+  .rent-cars h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .rent-cars {
+    background-position: center center;
+  }
+
+  hr {
+    margin-top: 10px;
+    border: 1px solid var(--header);
+  }
+
+  .review-box {
+    width: 100%;
+  }
+
+  .default {
+    background-position: center center;
+  }
+
+  .variety-box {
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .info-box {
+    padding: 10px;
+    align-items: center;
+  }
+
+  .info-box h3 {
+    font-size: 15px;
+  }
+
+  .info-box img {
+    width: 30px;
+  }
+
+  .footer-col-3,
+  .footer-col-4 {
+    text-align: left;
+  }
+}

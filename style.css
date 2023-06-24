@@ -132,22 +132,50 @@ header {
 }
 
 .btn {
-  padding: 20px 35px;
-  background-color: transparent;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
   border: none;
-  outline: none;
-  color: var(--text);
+  color: var(--header);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  gap: 8px;
   cursor: pointer;
-  border: 1.5px solid var(--header);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
 }
 
-.btn:hover {
+.btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  color: var(--text);
   background-color: var(--header);
-  transition: 3s;
-  transform-origin: left;
-  background-position: left;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+
+.btn:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+  color: var(--text);
+}
+
+.btn:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+  color: var(--text);
 }
 
 nav {
@@ -329,13 +357,13 @@ nav {
   animation-duration: 1.5s;
 }
 
-.closebtn{
+.closebtn {
   border: none;
-  background-color: var(--header);
   cursor: pointer;
   color: var(--text);
   outline: none;
   padding: 10px;
+  border-radius: 50%;
   font-size: 20px;
 }
 
@@ -1022,149 +1050,7 @@ h6 {
   width: 47%;
 }
 
-@media screen and (max-width: 768px) {
-  .modal-content {
-    width: 100%;
-  }
 
-  .bars {
-    display: block;
-  }
 
-  .nav-links {
-    display: none;
-    font-size: 13px;
-  }
 
-  .overlay-content a {
-    font-size: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
 
-  header {
-    padding: 20px 20px;
-  }
-
-  .header-logo {
-    width: 50px;
-  }
-
-  .header-text {
-    gap: 10px;
-    flex-direction: column;
-  }
-
-  .header-text a {
-    font-size: 12px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-  .rent-text {
-    top: 200px;
-  }
-
-  .rent-form {
-    flex-direction: column;
-    margin-top: 210px;
-  }
-
-  .header-con {
-    height: 700px;
-  }
-
-  .header-con h1 {
-    font-size: 28px;
-    line-height: 40px;
-  }
-
-  .rent-form input {
-    padding: 10px;
-    color: #fff;
-    gap: 10px;
-    width: 100%;
-  }
-
-  ::placeholder {
-    color: var(--text);
-  }
-
-  .btn {
-    padding: 10px 20px;
-  }
-
-  .col-2 h1 {
-    font-size: 27px;
-  }
-
-  .cars {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .car-img {
-    width: 100%;
-  }
-
-  .heading {
-    font-size: 30px;
-    line-height: 33px;
-    font-weight: normal;
-  }
-
-  .ride {
-    padding: 55px 20px;
-  }
-
-  .care-img {
-    width: 100%;
-  }
-
-  .rent-cars h1 {
-    font-size: 30px;
-    line-height: 32px;
-  }
-
-  .rent-cars {
-    background-position: center center;
-  }
-
-  hr {
-    margin-top: 10px;
-    border: 1px solid var(--header);
-  }
-
-  .review-box {
-    width: 100%;
-  }
-
-  .default {
-    background-position: center center;
-  }
-
-  .variety-box {
-    gap: 20px;
-    flex-direction: column;
-    padding: 20px 10px;
-  }
-
-  .info-box {
-    padding: 10px;
-    align-items: center;
-  }
-
-  .info-box h3 {
-    font-size: 15px;
-  }
-
-  .info-box img {
-    width: 30px;
-  }
-
-  .footer-col-3,
-  .footer-col-4 {
-    text-align: left;
-  }
-}
